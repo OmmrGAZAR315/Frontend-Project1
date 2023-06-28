@@ -1,0 +1,760 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr{
+    border: 1px solid #707070;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+/* /////////////Header/////////////////////////////// */
+.Main-header{
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,169,93,0.6);
+    z-index: 1;
+}
+.greenHeaderBackground_R{
+float:right;
+background-color: rgb(0,169,93);
+width: 1319px;
+height: 50px;
+}
+.greenHeaderBackground_L{
+    float: left;
+    background-color: rgba(0,141,76);
+width: 200px;
+height: 50px;
+}
+div, i{
+    color: #f6f6f6;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+.leftSide{
+    left: 0px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 200px;
+    background-color: rgba(0,141,76,0.6);
+}
+.websiteName{
+    font-size: 20px;
+    float: left;
+}
+.XboxLogo{
+    float: left;
+    height: 30px;
+    width: 30px;
+    line-height: 50px;
+    margin: 8px 5px 0 38px;
+
+}
+.rightSide{
+    width: 1319px;
+    height: 50px;
+    float: right;
+    text-align: right;
+}
+.settingsBars{
+    float: left;
+    width: 42px;
+    height: 100%;
+    background-color: rgba(0,169,93,0);
+    border: none;
+    transition: 0.5s;
+
+}
+.settingsBars:hover{
+    background-color: rgba(0,141,76,0.6);
+
+}
+.settingsBars:after{
+    height: 100%;
+    transition: 0.7s;
+    content: "";
+    width: 0px;
+    top:0px;
+    left:199px;
+    position: absolute;
+    background-color: rgba(0,141,76,0.6);
+}
+.settingsBars::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    top:0px;
+    left:27px;
+height: 100%;
+transition: 0.7s;
+background-color: rgba(0,141,76,0.6);
+}
+.settingsBars:focus:after{
+    width: 162px;
+    left:38px;
+    background-color: rgba(0,141,76);
+}
+.settingsBars:focus:before{
+    width: 38px;
+    left:0px;
+height: 50px;
+background: url(../Images/Section1/xboxLogo.png) no-repeat center ;
+background-size: contain;
+background-color: rgba(0,141,76,0);
+}
+.rightSide div, .rightSide li{
+    display: inline-block;
+}
+.rightSide ul div{
+    width: 95px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.rightSide div:hover{
+    background-color: #008d4c;
+}
+#LanguageDiv{
+    width: 140px;
+
+}
+#LanguageDiv .settings3{
+    padding:0 5px;
+}
+.rightSide a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+.Main-SelectLanguage{
+    background-color: rgba(0,169,93,0.5);
+    border: none;
+
+}
+select option {
+    margin: 40px;
+    background: white;
+    color: black;
+}
+/* ////////////////Main/////////////////////// */
+.Main-container{
+height: 93vh;
+position: relative;
+}
+video{
+    max-width: 100%;
+}
+.Main-Overlay{
+    margin-top: 50px;
+    height: 129%;
+    opacity: 0.7;
+     background-color: black;
+     position: absolute;
+     top: 0; bottom: 0;
+     right: 0; left: 0;
+}
+.Main-Title{
+    font-size: 33px;
+    position: absolute;
+    color: white;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Main-hr{
+    background-color: #9bf00b;
+    height: 10px;
+    border: none;
+    width: 198px;
+    margin-top: 0;
+    border-radius: 0px 30px;
+}
+/* //////////////Section Two////////////////// */
+.SectionTwo{
+    position: relative;
+    height: 108vh;
+    width: 100%;
+    margin-top: 241px;
+}
+.Section2_BaseImg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("../Images//Section2/Section2.1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+.SectionImage2{
+background-image: url("../Images/Section2/Section2.2.jpg");
+position: absolute;
+top: 0%;
+left:41%;
+width: 488px;
+height: 771px;
+background-repeat: no-repeat;
+background-size: cover;
+border: none;
+opacity: 0.7;
+z-index: -1;
+}
+.Section2Overlay{
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.Section2_Title{
+position: absolute;
+left:40%;
+top: 15%;
+}
+.Section2_Welcoming i{
+    font-size: 35px;
+}
+.section2_line{
+    width: 259px;
+    height: 7px;
+    background: green;
+    margin-left: 43px;
+    border: none;
+    margin-top: 0;
+    border-radius: 11px;
+}
+.Section2-after_before_test{
+    top: 260px;
+    left: 10%;
+    right: 10%;
+    position: absolute;
+    height: 200px;
+    top:43%;
+}
+.box1, .box2, .box3{
+    position: relative;
+    height: 200px;
+    width: 280px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 90px;
+    float: left;
+    text-align: center;
+    background-color: rgba(127, 127, 127, 0.8);
+}
+.Section2-after_before_test i{
+    font-size: 53px;
+    color:#1cce60;
+    margin-bottom: 10px;
+}
+.Section2-after_before_test h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.Section2-after_before_test p{
+    letter-spacing: 2px;
+}
+.Section2-after_before_test a{
+    color:aqua;
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
+}
+.box1:after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #00A65A;
+    width: 0; height: 0;
+}
+.box2:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: #00A65A;
+    left: 0;
+    width: 100%; height: 0;
+}
+.box3:after{
+    content: "";
+    position: absolute;
+    top: 0; right: 0;
+    background-color: #00A65A;
+    width: 0; height: 0;
+}
+.box1:hover:after,.box2:hover:after ,.box3:hover:after{
+    width: 100%; height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.8s;
+}
+
+/* ////////////Section3//////////////////// */
+.SectionThree{
+    height: 106vh;
+    width: 100%;
+    background-color: black;
+}
+.hiddenP{visibility: hidden;}
+.Section3-Content{
+    height: 95.47vh;
+    margin-top:16px;
+    margin-left: 5%;
+    width: 90%;
+}
+.Game{
+    width: 20%;
+    height: 100vh;
+    position: relative;
+    float: left;
+}
+#G3{left: 2;}
+#G4{left: 3;}
+#G5{left: 5;}
+
+.Game:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    border: 1px solid white;
+    border-style:none;
+    transition: 1s;
+}
+#G2:after, #G4::after{
+    border-style: none solid;
+}
+#G5:after{border-style: none solid none none;}
+#G5:hover:after{border-style: none solid none none; width: 110.5%;}
+
+.GameImg{
+    height: 100vh;
+    width: 100%;
+    transition: 1s;
+}
+.Game:hover .GameImg{
+    height: 110vh;
+    width: 110%;
+    transition: 1s;
+}
+/* #G2:hover .GameImg{height: 110vh;} */
+/* #G3:hover .GameImg{height: 96vh; width: 110%;} */
+/* #G4:hover .GameImg{height: 104vh; width: 104%;} */
+/* #G5:hover .GameImg{height: 100vh; width: 110.5%;} */
+
+.GameData{
+    position: absolute;
+    z-index: 1;
+    bottom: 37px;
+    left: 28px;
+}
+.GameName{
+    width: 210.55px;
+    height: 99.08px;
+}
+.Section3-details{
+    height: 51.55px;
+    width: 210.55px;
+    text-align: left;
+    margin-top: 25px;
+    font-size: 18px;
+    margin-left: 59px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    display: none;
+}
+.PlusDetails{
+    height: 20px;
+    width: 20px;
+    padding-top: 2px;
+    position: absolute;
+    left: 24px;
+    bottom: 30px;
+}
+.Game:hover .Section3-details, .Section3-details p{
+    display: inline-block;
+}
+/* ////////////BackGround-Image////////////// */
+.SectionFour{
+    position: relative;
+}
+.ImageBackground{
+    position: relative;
+    background: url(../Images/Section4/Section4.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 104vh;
+}
+.Section4_overlay{
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    top:0; right:0;
+    bottom: 0; left: 0;
+
+}
+.Section4-Banner{
+    width: 1000px;
+    height: 141px;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    top: 10%;
+    left: 17%;
+
+}
+.Section4-Title{
+    font-size: 46px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 37px;
+    margin-bottom: 25px;
+}
+.Section4-underLineAnime{
+    position: relative;
+    font-weight: 2x;
+    color: #9bf00b;
+    cursor: pointer;
+}
+.Section4-Link{color: #9bf00b;}
+.Section4-underLineAnime::after{
+    content: "";
+    position: absolute;
+    background-color: #9bf00b;
+    height: 2;
+    bottom: 0px;
+    width: 0;
+    left: 0px;
+    transition: 1s;
+    width: 0;
+
+}
+.Section4-underLineAnime:hover:after{
+    height: 2;
+    bottom: 0px;
+    left: 0px;
+    width: 85.5%;
+}
+.Section4-arrow{
+    font-size: 20px;
+    font-weight: 1000;
+    transition: 0.7s;
+}
+.Section4-underLineAnime:hover .Section4-arrow{
+    padding-left: 10px;    
+}
+
+    
+.Section4-Items{
+    position: absolute;
+    height: 448px;
+    width: 97.5%;
+    top: 37%;
+    left: 2%;
+}
+.Section4-Item{
+    position: relative;
+    float: left;
+    margin-right: 19px;
+    height: 98%;
+    width: 32%;
+    background-color: rgba(0, 127, 0, 0.5);
+}
+.Section4-Item:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+    background-color: #00A65A;
+    opacity: 1;    
+}
+.Section4-Item:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+    
+#bottomToUP:after{
+    bottom: 0; 
+    left: 0;  
+    height: 0;
+}
+#bottomToUP:hover:after{
+    height: 100%; 
+    width: 100%;
+}
+
+#RightToLeft:after{
+    right: 0; top: 0;  
+    height: 100%; 
+    width: 0;
+}
+#RightToLeft:hover:after{
+    height: 100%; 
+    width: 100%;
+}
+
+#leftToRight:after{
+    left: 0; top: 0;  
+    height: 100%; 
+    width: 0;
+}
+#leftToRight:hover:after{
+    height: 100%; 
+    width: 100%;
+}
+
+
+
+.Section4-Item-Img{
+    width: 432px;
+    height: 243px;
+    margin-left: 5%;
+    margin-top: 2%;
+    transition: 1s;
+}
+.Section4-Item-Img-overlay{
+    width: 432px;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    background-color: grey;
+    opacity: 0.7;
+}
+.Section4-Item:hover .Section4-Item-Img-overlay{
+    height: 244px;
+    bottom: 0;
+}
+.Section4-ItemName{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 24px;
+}
+.Section4-Item .Section4-underLineAnime{
+    left: 45px;
+    top: 50px;
+    font-size: 18px;
+    z-index: 1;
+}
+/* ///////////////Section5/////////////////// */
+.SectionFive{
+    height: 104.5vh;
+    width: 100%;
+    background-color: #201F24;
+    overflow: auto;
+}
+.Section5-LeftSide{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.Section5-buyBoxPurchases{
+width: 50%;
+height: 100%;
+float: left;
+}
+.Section5-buyBoxPurchases  h2{
+    margin-top: 41px;
+    font-size: 62px;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+}
+.Section5-buyBoxPurchases  h2 + h2{
+    color: #9bf00b;
+}
+
+.Section5-purchBoxes{
+    height: 81%;
+    width: 100%;
+    margin-top: 16px;
+    float: left;
+}
+.Section5-standalonePurch, .Section5-purchALLAcess{
+    border: 1px solid #707070;
+    height: 100%;
+    width: 43.8%;
+    float: left;
+    padding: 32px 15px;
+    margin-right: 10px;
+    background-color:#191919;
+}
+.Section5-buyBoxPurchases .pricing{
+    font-size: 24px;
+    font-weight: 1000;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI Helvetica,Arial,sans-serif;
+}
+.section5-purchase-title{
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+}
+.section5-intro > p, .Section5-buyBoxPurchases .p2{
+    padding-top: 24px;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+.Section5-buyBoxPurchases .p2{ padding: 10 0;}
+.Section5-buyBoxPurchases ul{
+    padding-left: 16; 
+    font-size: 16px;
+    line-height: 23px;
+}
+.section5-intro{
+    min-height: 224px;
+}
+.purchase-store{
+    padding-top: 48px;
+    margin-bottom: 29px;
+}
+.buy-group-store{
+    cursor: pointer;
+    text-align: center;
+    color: #054b16;
+    font-weight: 900;
+    background: #9bf00b;
+    transition: 1s;
+    height: 31px;
+    width: 142px;
+    margin-top: 19px;
+    position: relative;
+}
+.buy-group-store a{
+    color: #054b16;
+ 
+}
+.buy-group-store .Section4-arrow{
+    padding-left: 3px;
+    transition: 0.7s;
+}
+.buy-group-store:hover .Section4-arrow{
+    padding-left: 10px;    
+}
+.buy-group-store:after{
+    content: "";
+    position: absolute;
+    background-color: #054b16;
+    height: 2;
+    bottom: 4px;
+    width: 0;
+    left: 22px;
+    transition: 0.5s;
+    width: 0;
+
+}
+.buy-group-store:hover:after{
+    height: 2;
+    bottom: 4px;
+    left: 22px;
+    width: 51.5%;
+}
+.Section5-selectR{
+    font-size: 15px;
+    font-weight: 700;
+}
+.Section5-Images{
+    margin-top: 88px;
+    height: 534.7;
+    width: 678.16;
+    margin-left: 39px;
+}
+.Section5-Images-button{
+    line-height: 39px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    height: 42.4px;
+    width: 42.4px;
+    background-color: #2e2e2e;
+    color: #ccc;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+}
+.RB{ right: 27px; top: 47%;}
+.LB{ right: 35em; top: 47%;}
+
+.Section5-Images-button:hover{
+    background-color: #545353;
+}
+.Section5-Images-button::after{
+    content: "";
+    position: absolute;
+    height: 535.1;
+    width: 678.16;
+    background-color: #201F24;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;   
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+
+}
+.RB::after{
+    top: -263px; left: -543px; 
+    background-image: url(../Images/Section5/2.png);
+ }
+ .LB::after{
+    top: -263px; left: -100px; 
+    background-image: url(../Images/Section5/4.png);
+ } 
+.Section5-Images-button:focus::after{
+    opacity: 1;
+    visibility: visible;
+    z-index: -1;
+    z-index: 0;
+
+ }
+.RB:focus::after{left: -634px;}
+.LB:focus::after{left: -20px;}
+
+.Section5-Leftside-photos{
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    margin-left: 193px;
+    margin-top: -32px;
+    z-index: 33;
+}
+.Section5-Leftside-photos img{
+    border: 1px solid #707070;
+}
+.Section5-Leftside-photos li{
+    position: relative;
+    padding: 6 4 1px 4;
+    display: inline-block;
+    background-color: #201F24;
+}
+ .Section5-Leftside-photos li:after{
+    content: "";
+    position: absolute;
+    bottom: 1.5px;
+    left: 0px;
+    width: 0%;
+}
+ .Section5-Leftside-photos li:hover:after,.Section5-Leftside-photos button:focus li:after{
+    border: 2px solid #9BF00A;
+    bottom: 1.5px;
+    width: 87%;
+    left: 4px;
+ }
+.Section5-Leftside-photos button:focus li{
+    border: 2px solid #fff;
+ }
