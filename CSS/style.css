@@ -597,7 +597,16 @@ float: left;
     font-weight: 1000;
     font-family: SegoeProBlack, Segoe UI,SegoeUI Helvetica,Arial,sans-serif;
 }
-.section5-purchase-title{
+.Section5-WidthSelect:after{
+    left: 18px;
+    transition: 0.7s;
+}
+
+#Section5-WidthSelect:hover:after {
+    left: 18px;
+    width: 75.5%;
+}
+#section5-purchase-title{
     font-size: 24px;
     color: white;
     font-weight: 800;
