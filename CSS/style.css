@@ -23,7 +23,7 @@ a{
 .greenHeaderBackground_R{
 float:right;
 background-color: rgb(0,169,93);
-width: 1319px;
+width: 81.95rem;
 height: 50px;
 }
 .greenHeaderBackground_L{
@@ -59,7 +59,7 @@ div, i{
 
 }
 .rightSide{
-    width: 1319px;
+    width: 81.95rem;
     height: 50px;
     float: right;
     text-align: right;
